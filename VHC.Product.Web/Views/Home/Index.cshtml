@@ -1,0 +1,16 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Upload database file!</h1>
+    @using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.TextBoxFor(m => m.File, new { type = "file" })
+        @Html.ValidationMessageFor(m => m.File)
+
+        <br />
+        <button type="submit" class="btn btn-success">Upload</button>
+    }
+</div>
