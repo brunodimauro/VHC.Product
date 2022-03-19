@@ -10,6 +10,10 @@
 
 Start the VHC.Product.API project first. You can use RESTful operations with swagger or you can start VHC.Product.Web/VHC.Product.Console project after.
 
+## Chosen Database
+
+I decide to use InMemory Database from EntityFramework to make it simple to run e analyze the assignment. It could be easily changed to SQLServer, for example.
+
 ## Explaining the structure
 
 ### VHC.Product.API
@@ -35,7 +39,7 @@ The Service Layer contains all business logic that the project needs.
 
 ### VHC.Product.Tests
 
-The Test Layer performs tests with a test InMemory Database and tests product's service.
+The Test Layer performs tests with an exclusive InMemory Database and tests product's service.
 
 ### VHC.Product.Web
 
